@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Last commit name from working branch:"
+echo "Last commit message from working branch:"
 git log -1 | tail -n 1 | tr -d ' ' 
 read -p "ENTER COMMIT: " COMMIT
 git add .
