@@ -1,0 +1,6 @@
+#!/bin/bash
+read -p "ENTER COMMIT: " COMMIT
+git add .
+git commit -m "$COMMIT"
+git push
+echo 'COMPLETED'
