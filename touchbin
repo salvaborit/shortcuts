@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+case $1 in
+	*)
+	touch $1
+	echo "#!/usr/bin/env bash" > $1
+	echo "# " >> $1
+	chmod 744 $1
+esac

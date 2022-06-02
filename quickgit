@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#This script adds contents of cwd, commits with custom input (no spaces) and pushes to GitHub
+
+echo "Last commit message from working branch:"
+git log -1 | tail -n 1 | tr -d ' '
+
+read -p "ENTER COMMIT: " COMMIT
+git add .
+git commit -m "$COMMIT"
+git push
+echo 'COMPLETED'
