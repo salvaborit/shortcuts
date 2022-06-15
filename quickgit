@@ -9,10 +9,12 @@ then
 	git add .
 	git commit -m "$COMMIT"
 	git push
+	echo "COMMIT NAME: $COMMIT"
 	echo COMPLETED
 else
 	git add .
 	git commit -m "$1"
 	git push
+	echo "COMMIT NAME: $COMMIT"
 	echo COMPLETED
 fi
