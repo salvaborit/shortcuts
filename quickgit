@@ -16,5 +16,5 @@ else
 	git commit -m "$1"
 	git push
 	echo "COMMIT NAME: $COMMIT"
-	echo COMPLETED
+	echo ---- COMPLETED ----
 fi

@@ -1,17 +1,15 @@
-#!/usr/bin/env bash
+#!/bin/bash
+# template for C file
 
 case $1 in
 	*)
 	touch $1
-	echo "#include <stdio.h>" > $1
+	echo "#include \".h\"" >> $1
 	echo "/**" >> $1
-	echo "* main - Entry point" >> $1
-	echo "*" >> $1
-	echo "* Return: Always 0 (Success)" >> $1
+	echo "* " >> $1
 	echo "*/" >> $1
-	echo "int main(void)" >> $1
+	echo "" >> $1
 	echo "{" >> $1
-	echo "	return (0);" >> $1
+	echo "	" >> $1
 	echo "}" >> $1
-	chmod 744 $1
 esac

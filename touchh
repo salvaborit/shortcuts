@@ -1,0 +1,13 @@
+#!/bin/bash
+# template for C header file
+
+case $1 in
+	*)
+	touch $1
+	echo "#ifndef _H" > $1
+	echo "#define _H" >> $1
+	echo "" >> $1
+	echo "" >> $1
+	echo "" >> $1
+	echo "#endif // MAIN_H" >> $1
+esac
